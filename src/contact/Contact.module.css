@@ -1,0 +1,36 @@
+.contactBlock {
+    height: 100vh;
+    background-color: #d4b5f6;
+}
+
+.contactContainer {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactHeader {
+    border: 1px solid;
+    width: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.contactForm {
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 280px;
+    min-height: 150px;
+    color: #2f3e86;
+}
+
+.contactInput {
+    background-color: #ded6cd;
+}
+
+.contactTextarea {
+    min-height: 70px;
+    background-color: #ded6cd;
+}

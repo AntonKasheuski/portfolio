@@ -1,0 +1,39 @@
+.projectBlock {
+    border: 1px solid;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projectImg {
+    background-color: #887c67;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://klike.net/uploads/posts/2019-07/1564314090_3.jpg");
+    background-size: cover;
+    position: center;
+}
+
+.projectText {
+    background-color: #bbab8d;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectHeader {
+    background-color: #a29280;
+    width: fit-content;
+    margin: 10px;
+}
+
+.projectDescription {
+    background-color: #a29280;
+    width: 90%;
+    margin: 10px;
+}

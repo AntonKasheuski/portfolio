@@ -1,0 +1,27 @@
+.skillBlock {
+    border: 1px solid;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.skillLogo {
+    border: 1px solid;
+    width: 70px;
+    height: 70px;
+    background-color: grey;
+}
+
+.skillHeader {
+
+}
+
+.skillDescription {
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+}
