@@ -11,6 +11,7 @@ const Title = (props: PropsType) => {
             <h2>{props.firstWord}
                 <span>{props.secondWord}</span>
             </h2>
+            <div className={style.animatedBar} />
         </div>
     );
 };

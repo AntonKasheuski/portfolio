@@ -2,6 +2,7 @@
     border: 1px solid;
     width: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     position: relative;
 }
@@ -24,13 +25,51 @@
     color: #6c54c7;
 }
 
-.title::before {
-    content: '';
-    position: absolute;
+.animatedBar {
     background-color: #6c54c7;
+    content: '';
+    display: block;
     height: 3px;
+    left: 0;
+    margin: 0 auto 0 auto;
+    position: relative;
+    right: 0;
     width: 100px;
     border-radius: 4px;
-    margin: 0 auto 0 auto;
-    bottom: 0;
+}
+
+.animatedBar::before {
+    background-color: #212121;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 4px;
+    left: 8px;
+    -webkit-animation: heading-move1 5s infinite linear;
+    animation: heading-move1 5s infinite linear;
+}
+
+@keyframes heading-move1 {
+    0% { left: 8px; }
+    50% { left: 96px; }
+    100% { left: 8px; }
+}
+
+.animatedBar::after {
+    background-color: #212121;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 4px;
+    left: 0;
+    -webkit-animation: heading-move2 5s infinite linear;
+    animation: heading-move2 5s infinite linear;
+}
+
+@keyframes heading-move2 {
+    0% { left: 0; }
+    50% { left: 88px; }
+    100% { left: 0; }
 }
