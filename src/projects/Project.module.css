@@ -1,10 +1,15 @@
 .projectBlock {
-    border: 1px solid;
     width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: #232323;
+    box-shadow: 0 0 10px rgb(0 0 0 / 85%);
+    border: none;
+    margin-bottom: 70px;
+    padding: 20px;
+    border-radius: 4px;
 }
 
 .projectImg {
@@ -14,26 +19,70 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://klike.net/uploads/posts/2019-07/1564314090_3.jpg");
     background-size: cover;
-    position: center;
+    background-position: center;
+    position: relative;
+}
+
+.projectImg::before {
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+}
+
+.button {
+    position: relative;
+    z-index: 1;
 }
 
 .projectText {
-    background-color: #bbab8d;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .projectHeader {
-    background-color: #a29280;
-    width: fit-content;
-    margin: 10px;
+    font-family: Lato,sans-serif;
+    line-height: 120%;
+    color: #fff;
+    font-weight: 700;
+    margin: 15px 0 15px;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    display: block;
+}
+
+.projectHeader a {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease 0s;
+    outline: 0!important;
+    box-sizing: border-box;
+    font-family: Lato,sans-serif;
+    line-height: 120%;
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 
 .projectDescription {
-    background-color: #a29280;
-    width: 90%;
-    margin: 10px;
+    outline: 0!important;
+    box-sizing: border-box;
+    display: block;
+    font-family: Lato,sans-serif;
+}
+
+.projectDescription p {
+    color: #888;
+    font-family: Lato,sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 15px 0 15px;
+    padding: 0;
 }

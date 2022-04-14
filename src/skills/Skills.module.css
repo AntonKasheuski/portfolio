@@ -8,14 +8,6 @@
     justify-content: center;
 }
 
-.skillsHeader {
-    border: 1px solid;
-    width: auto;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-}
-
 .mySkills {
     border: 1px solid;
     width: 100%;

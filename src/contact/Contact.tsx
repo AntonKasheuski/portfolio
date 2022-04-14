@@ -10,9 +10,9 @@ const Contact = () => {
                 <form className={style.contactForm}>
                     <input className={style.contactInput}/>
                     <input className={style.contactInput}/>
-                    <textarea className={style.contactTextarea}></textarea>
+                    <textarea className={style.contactTextarea}/>
+                    <button type={"submit"}>Send</button>
                 </form>
-                <button>Send</button>
             </div>
         </div>
     );
