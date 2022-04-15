@@ -4,10 +4,10 @@
     display: flex;
     align-items: center;
     position: relative;
-    z-index: -2;
+    z-index: -1;
 }
 
-.projectsBlock::before {
+.projectsBlock::after {
     position: absolute;
     content: '';
     background-color: #6c54c7;
