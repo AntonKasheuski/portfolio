@@ -58,6 +58,7 @@
     font-size: 1.25rem;
     box-sizing: border-box;
     display: block;
+    text-decoration: none;
 }
 
 .projectHeader.onPoint {
