@@ -1,5 +1,7 @@
 .projectsBlock {
-    min-height: 100vh;
+    min-height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     background-color: #111;
     display: flex;
     align-items: center;
@@ -11,33 +13,38 @@
     position: absolute;
     content: '';
     background-color: #6c54c7;
-    height: 155%;
-    width: 136%;
-    transform: rotate(-57deg);
-    left: -91%;
-    top: -48%;
+    transform-origin: top right;
+    transform: rotate(33deg);
+    height: 250%;
+    width: 100%;
+    top: -5vh;
+    left: -100vh;
     z-index: -1;
     box-shadow: 0 0 7px rgb(255 255 255 / 95%);
 }
 
-@media only screen and (max-width: 1140px) {
-    .projectsBlock::before {
-        left: -80%;
-        top: -65%;
+@media only screen and (max-width: 1510px) {
+    .projectsBlock::after {
+        left: -80vh;
     }
 }
-@media only screen and (max-width: 879px) {
-    .projectsBlock::before {
-        height: 100%;
-        width: 100%;
+@media only screen and (max-width: 1392px) {
+    .projectsBlock::after {
+        transform: rotate(20deg);
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .projectsBlock::after {
+        left: -50vh;
+    }
+}
+@media only screen and (max-width: 929px) {
+    .projectsBlock::after {
         transform: rotate(0deg);
-        top: 0;
-        bottom: 0;
+        height: 115%;
         left: 0;
-        right: 0;
     }
 }
-
 
 .projectsContainer {
     flex-direction: column;
@@ -56,7 +63,7 @@
     margin-top: 30px;
 }
 
-@media screen and (max-width: 879px) {
+@media screen and (max-width: 929px) {
     .myProjects {
         justify-content: center;
     }
