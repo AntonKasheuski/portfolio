@@ -1,11 +1,19 @@
 .contactBlock {
-    height: 100vh;
-    background-color: #d4b5f6;
+    min-height: 90vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: #bd1d1d;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: -1;
 }
 
 .contactContainer {
     flex-direction: column;
     justify-content: center;
+    background-color: #232323;
+    border-radius: 20px;
 }
 
 .contactHeader {

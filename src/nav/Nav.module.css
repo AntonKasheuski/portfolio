@@ -1,7 +1,57 @@
 .nav {
-    border: 1px solid;
-    width: 300px;
+    grid-area: n;
+    width: 70px;
+    height: 90%;
+    position: relative;
+    border-radius: 10px 0 0 10px;
     display: flex;
-    justify-content: space-between;
-    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    overflow: visible;
+    z-index: 1;
+}
+
+.iconBox {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeIcon {
+    color: #6c54c7;
+    position: relative;
+    left: -30px;
+}
+.activeIcon::before {
+    position: absolute;
+    content: '';
+    background-color: #111;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -2;
+}
+.activeIcon::after {
+    position: absolute;
+    content: '';
+    background-color: #232323;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top: 5px;
+    right: 5px;
+    z-index: -1;
+}
+
+.icon {
+    color: #5e5e5e;
+}
+
+.navText {
+    position: absolute;
+    right: 80px;
 }
