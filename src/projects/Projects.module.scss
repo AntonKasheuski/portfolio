@@ -1,0 +1,59 @@
+@import './../common/styles/sass/variables';
+
+.projectsBlock {
+  min-height: 90vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: $mainBackgroundColor;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+  &::after {
+    position: absolute;
+    content: '';
+    background-color: $themeColor;
+    transform-origin: top right;
+    transform: rotate(33deg);
+    height: 250%;
+    width: 100%;
+    top: -5vh;
+    left: -100vh;
+    z-index: -1;
+    box-shadow: 0 0 7px rgba(255, 255, 255 , 0.95);
+    @media only screen and (max-width: 1510px) {
+      left: -80vh;
+    }
+    @media only screen and (max-width: 1392px) {
+      transform: rotate(20deg);
+    }
+    @media only screen and (max-width: 1200px) {
+      left: -50vh;
+    }
+    @media only screen and (max-width: 929px) {
+      transform: rotate(0deg);
+      height: 115%;
+      left: 0;
+    }
+  }
+
+  .projectsContainer {
+    flex-direction: column;
+    justify-content: center;
+    background-color: $pageBackgroundColor;
+    border-radius: 20px;
+
+    .myProjects {
+      border: 1px solid;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      @media screen and (max-width: 929px) {
+        justify-content: center;
+      }
+    }
+  }
+}
